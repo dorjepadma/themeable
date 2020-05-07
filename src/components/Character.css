@@ -1,11 +1,19 @@
-.Characters {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-  li {
-    width: 25vw;
-    height: 25rem;
-    padding: 1rem 0;
-    list-style-type: none;
+.Character {
+  height: 60%;
+  background-color: rgb(160, 160, 221);
+  color: black;
+  border: rgb(12, 2, 59);
   }
-  
+  img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 60%
+  }
+  h3 {
+    text-align: center;
+  }
+  p {
+    padding: 1rem 2rem;
+    line-height: 1.5rem;
+  }

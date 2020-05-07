@@ -6,7 +6,7 @@ const Character = ({ photoUrl, name, }) => (
   <section className={styles.Character}>
     <img src={photoUrl} 
       alt={name} />
-    <h3>{name}</h3>
+    <h2>{name}</h2>
   </section>
 );
 

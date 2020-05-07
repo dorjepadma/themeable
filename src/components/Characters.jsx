@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Character from './Character';
-import styles from '../components/Character';
+import styles from '../components/Characters';
 
 const Characters = ({ characters }) => {
   const characterElements = characters.map(character => (
