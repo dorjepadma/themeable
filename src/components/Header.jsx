@@ -1,16 +1,18 @@
 import React from 'react';
-// import Toggle from '../components/Toggle';
-// import { Theme } from './theme.jsx';
+import Toggle from '../components/Toggle';
+import { useToggle, useDark } from '../Hooks/Provider';
+
 
 const Header = () => {
-  // const toggle = useToggle();
+  const toggle = useToggle();
+  const dark = useDark();
 
   return (
     <header>
       <h1>
       The Characters of Avatar
-        {/* <Toggle value={Theme === 'lightTheme'} toggle={toggle}/> */}
       </h1>
+      <Toggle value={dark === 'dark'} toggle={toggle}/>
     </header>
   );
 };

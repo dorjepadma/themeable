@@ -1,19 +1,15 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch
-} from 'react-router-dom';
 import CharacterList from '../../containers/CharacterList';
+import Header from '../../components/Header'
+import { LightDarkProvider } from '../../Hooks/Provider'
 
 export default function App() {
   return ( 
     <>
-      <Router>
-        <Switch>
-          <Route exact path='/' component={CharacterList} /> 
-        </Switch>
-      </Router>
+      <LightDarkProvider>
+        <Header/>
+        <CharacterList/> 
+      </LightDarkProvider>
     </>
   );
 } 

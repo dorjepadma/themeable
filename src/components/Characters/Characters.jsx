@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Character from './Character';
-import styles from '../components/Characters.css';
+import Character from '../Character';
+import { LightDarkProvider } from '../../Hooks/Provider'
+import styles from './Characters.css';
+import styleDark from './Dark.css';
+import styleLight from './Light.css';
 
 const Characters = ({ characters }) => {
   const characterElements = characters.map(character => (
@@ -9,10 +12,12 @@ const Characters = ({ characters }) => {
       <Character {...character} />
     </li>
   ));
+  const theme = LightDarkProvider();
+  const styles = theme === 'dark' ? styleLight : styleDark;
 
   return (
     <ul className={styles.Characters}>
-      {characterElements}
+      {characters}
     </ul>
   );
 };
@@ -22,7 +27,6 @@ Characters.propTypes = {
     _id: PropTypes.number.isRequired,
     photoUrl: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    affiliation: PropTypes.string
   })).isRequired
 };
 
