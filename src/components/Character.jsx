@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Character.css';
 
-const Character = ({ photoUrl, name, }) => (
+const Character = ({ photoUrl, name }) => (
   <section className={styles.Character}>
     <img src={photoUrl} 
       alt={name} />

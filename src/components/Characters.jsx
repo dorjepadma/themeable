@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import Character from './Character';
-import styles from '../components/Characters';
+import styles from '../components/Characters.css';
 
 const Characters = ({ characters }) => {
   const characterElements = characters.map(character => (
     <li key={character._id}>
-      <Link to={`/${character._id}`}>
-        <Character {...character} />
-      </Link>
+      <Character {...character} />
     </li>
   ));
 

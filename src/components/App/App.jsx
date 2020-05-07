@@ -9,7 +9,6 @@ import CharacterList from '../../containers/CharacterList';
 export default function App() {
   return ( 
     <>
-      <p>The Characters of Avatar:</p>
       <Router>
         <Switch>
           <Route exact path='/' component={CharacterList} /> 
