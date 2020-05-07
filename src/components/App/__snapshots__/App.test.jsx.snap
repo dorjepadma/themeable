@@ -2,9 +2,6 @@
 
 exports[`App component renders App 1`] = `
 <Fragment>
-  <p>
-    The Characters of Avatar:
-  </p>
   <BrowserRouter>
     <Switch>
       <Route
