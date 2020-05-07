@@ -17,3 +17,4 @@ Character.propTypes = {
 };
 
 export default Character;
+
