@@ -9,6 +9,9 @@
     "browser": true,
     "jest": true
   },
+  "files.associations": {
+      "*.css": "scss"
+    },
   "plugins": [
     "babel",
     "react"

@@ -1,0 +1,22 @@
+.Toggle { 
+  input {
+    display: none;
+  }
+
+label {
+    display: block;
+    width: 2rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    
+    background-color: rgb(243, 95, 95);
+  }
+  input:checked + label {
+    background-color: rgb(110, 168, 185);
+
+    &::before {
+      margin-left: 1rem;
+    }
+  }
+}

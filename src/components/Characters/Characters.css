@@ -1,0 +1,13 @@
+.Characters {
+  display: grid;
+  grid-template-columns: repeat(4, 10fr);
+ 
+
+   
+}
+  li {
+    width: 25vw;
+    height: 25rem;
+    list-style-type: none;
+  }
+  

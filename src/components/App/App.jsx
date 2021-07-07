@@ -1,6 +1,15 @@
 import React from 'react';
+import CharacterList from '../../containers/CharacterList';
+import Header from '../../components/Header'
+import { LightDarkProvider } from '../../Hooks/Provider'
 
 export default function App() {
-  return <h1>Hello World</h1>;
-}
-  
+  return ( 
+    <>
+      <LightDarkProvider>
+        <Header/>
+        <CharacterList/> 
+      </LightDarkProvider>
+    </>
+  );
+} 

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`creates the character builds the Character 1`] = `
+<section
+  className="Character"
+>
+  <img
+    alt="Aang"
+    src="https://vignette.wikia.nocookie.net/avatar/images/a/ae/Aang_at_Jasmine_Dragon.png/revision/latest?cb=20130612174003"
+  />
+  <h2>
+    Aang
+  </h2>
+</section>
+`;

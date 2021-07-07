@@ -1,0 +1,17 @@
+.Character {
+  height: 60%;
+  background-color: rgb(160, 160, 221);
+  color: black;
+  border: rgb(12, 2, 59);
+  margin: auto;
+  }
+  img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height:60% 
+  }
+  h2 {
+    text-align: center;
+  }
+  
